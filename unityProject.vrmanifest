@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.disseaturtle.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "F:\\DIS\\DIS Sea Turtle\\actions.json",
+      "action_manifest_path": "E:\\DIS\\DIS Sea Turtle\\actions.json",
       "strings": {
         "en_us": {
           "name": "DIS Sea Turtle [Testing]"

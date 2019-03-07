@@ -48,6 +48,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5587358131813991324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7004555646046681003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f554be47a7b6146ab3df3a5e3da35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ActiveHand: {fileID: 0}
 --- !u!114 &7878568399692256932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,17 +84,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animated Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.041349
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.72594
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.0032005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
       propertyPath: m_LocalRotation.x
@@ -115,13 +132,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 729a6ed26ec4bed49922d21b0a23ba95, type: 2}
-    - target: {fileID: 9500000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
-      propertyPath: m_CullingMode
-      value: 0
+    - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25965
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25965
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25965
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -143,6 +164,14 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 7004555646046972809}
+    - target: {fileID: 9500000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 729a6ed26ec4bed49922d21b0a23ba95, type: 2}
+    - target: {fileID: 9500000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e187e7d57f7f60a40833ea5801c1b878, type: 3}

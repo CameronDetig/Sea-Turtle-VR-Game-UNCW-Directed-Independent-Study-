@@ -30,9 +30,6 @@ public class Spawner : MonoBehaviour
             int selectObject = Random.Range(1, 5);
             int spawnNum = Random.Range(1, 5);
 
-            print(selectObject);
-            print(spawnNum);
-
             var spawnObject = jellyFish;
             var spawnPos = spawn1;
 
