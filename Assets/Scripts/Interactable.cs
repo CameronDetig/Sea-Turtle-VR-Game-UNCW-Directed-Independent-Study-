@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Recycling" || col.gameObject.name == "Turtle")
+        if (col.gameObject.tag == "Recycling" || col.gameObject.tag == "Turtle")
         {
             print("Collision");
             Destroy(this.gameObject);

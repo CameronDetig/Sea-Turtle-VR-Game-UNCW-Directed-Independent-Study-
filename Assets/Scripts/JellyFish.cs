@@ -10,7 +10,7 @@ public class JellyFish : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        turtle = GameObject.FindWithTag("turtle");
+        turtle = GameObject.FindWithTag("Turtle");
     }
 
     // Update is called once per frame
