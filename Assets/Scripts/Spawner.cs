@@ -12,16 +12,27 @@ public class Spawner : MonoBehaviour
     public GameObject spawn3;
     public GameObject spawn4;
 
+    public GameObject cube;//--------------
+
+    public GameObject startBag;
+
     public float gap = 2.0f;
+    public float startGap = 8.0f;
     public int counter = 0;
 
     public int bagHitCounter = 0;
-    //public bool gamePlaying = true;     //Will eventually be first initialized to false and later set to true by the UI.
+    public bool gamePlaying = false;     //Will eventually be first initialized to false and later set to true by the UI.
 
+    void Start()
+    {
+        Instantiate(startBag, startBag.transform.position, Quaternion.identity);
+        Instantiate(cube, cube.transform.position, Quaternion.identity);//-----------
+    }
 
     void Update()
     {
-        if (bagHitCounter < 3)          //Ends game if three bags hit the turtle.
+
+        if (bagHitCounter < 3 && gamePlaying == true)          //Ends game if three bags hit the turtle.
         { 
             gap -= Time.deltaTime;
 
@@ -72,5 +83,15 @@ public class Spawner : MonoBehaviour
                 }
             }
         }
+        //else
+        //{
+        //    Instantiate(startBag, startBag.transform.position, Quaternion.identity);
+        //    startGap -= Time.deltaTime;
+        //    if (startGap <= 0)
+        //    {
+        //        Instantiate(startBag, startBag.transform.position, Quaternion.identity);
+        //    }
+        //    startGap = 8.0f;
+        //}
     }
 }

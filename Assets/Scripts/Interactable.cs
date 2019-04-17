@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Interactable : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public Hand m_ActiveHand = null;
 
     void OnCollisionEnter(Collision col)
@@ -13,6 +13,7 @@ public class Interactable : MonoBehaviour
         if (col.gameObject.tag == "Recycling" || col.gameObject.tag == "Turtle")
         {
             print("Collision");
+            ///Implement Send Drop signal.-----------------------------
             Destroy(this.gameObject);
         }
     }
